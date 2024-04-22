@@ -8,7 +8,7 @@ pipeline {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                         sh "docker build -t adijaiswal/shippingservice:latest ."
                     }
-                }
+                } 
             }
         }
         
